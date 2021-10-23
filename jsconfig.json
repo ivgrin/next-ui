@@ -2,8 +2,13 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "ui-components/*": ["./ui-components/*"],
-            "ui/*": ["./ui/*"]
+            "kit/*": ["./kit/*"],
+            "components/*": ["./src/components/*"],
+            "app/*": ["./src/components/app/*"],
+            "layout/*": ["./src/components/layout/*"],
+            "page/*": ["./src/components/page/*"],
+            "ui/*": ["./src/components/ui/*"],
+            "pages/*": ["./src/pages/*"],
         }
     }
 }

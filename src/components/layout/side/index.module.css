@@ -1,0 +1,53 @@
+.container {
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 72px;
+    padding: 0 24px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav {
+    margin: 0;
+    padding: 24px 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+    padding: 16px 24px;
+    cursor: pointer;
+    color: #999;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+.navItem:hover {
+    color: #666;
+}
+.navItem.active {
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navDelimiter {
+    padding: 16px 0;
+}
+
+.navDelimiter div {
+    height: 1px;
+    background: #323232;
+}
