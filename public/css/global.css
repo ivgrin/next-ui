@@ -1,3 +1,6 @@
+@import 'public/css/config.css';
+@import 'public/font/montserrat.css';
+
 html {
     display: flex;
     flex-direction: column;
@@ -17,11 +20,11 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #3F453A;
-    background: #fafafa;
+    background: #f3f3f3;
 }
 
 svg {
@@ -30,7 +33,7 @@ svg {
 }
 
 button, input, select, textarea {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 

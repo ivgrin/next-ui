@@ -1,0 +1,10 @@
+:root {
+    --palette-color-primary: #3c90f4;
+    --palette-color-primary-rgb: 60, 144, 244;
+    --palette-color-error: #d3220b;
+    --palette-color-error-rgb: 211, 34, 11;
+    --palette-color-text: #3B414A;
+    --palette-color-text-placeholder: #aaa;
+
+    --palette-font-size-text: 14px;
+}

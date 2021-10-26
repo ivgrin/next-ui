@@ -1,0 +1,251 @@
+/* config */
+.container {
+
+    --next-ui-textline-gap: 12px;
+    --next-ui-textline-width: 100%;
+    --next-ui-textline-height: 40px;
+
+    --next-ui-textline-color: var(--palette-color-text);
+    --next-ui-textline-font-weight: 600;
+    --next-ui-textline-font-size: var(--palette-font-size-text);
+    --next-ui-textline-background-color: #fff;
+    --next-ui-textline-border-width: 1px;
+    --next-ui-textline-border-color: #C6C6C6;
+    --next-ui-textline-border-radius: 4px;
+    --next-ui-textline-shadow: none;
+
+    --next-ui-textline-placeholder-color: var(--palette-color-text-placeholder);
+    --next-ui-textline-placeholder-font-weight: 500;
+
+    --next-ui-textline-control-gap: 10px;
+    --next-ui-textline-control-color: var(--next-ui-textline-color);
+    --next-ui-textline-clear-size: 10px;
+    --next-ui-textline-unravel-size: 16px;
+
+    --next-ui-textline-hovered-background-color: var(--next-ui-textline-background-color);
+    --next-ui-textline-hovered-border-color: #aaa;
+    --next-ui-textline-hovered-shadow: var(--next-ui-textline-shadow);
+
+    --next-ui-textline-focused-color: var(--next-ui-textline-color);
+    --next-ui-textline-focused-background-color: var(--next-ui-textline-background-color);
+    --next-ui-textline-focused-border-color: var(--palette-color-primary);
+    --next-ui-textline-focused-shadow: 0 0 0 4px rgba(var(--palette-color-primary-rgb), 0.2);
+    --next-ui-textline-focused-placeholder-color: var(--palette-color-text-placeholder);
+    --next-ui-textline-focused-control-color: var(--next-ui-textline-color);
+
+    --next-ui-textline-errored-color: var(--palette-color-error);
+    --next-ui-textline-errored-background-color: var(--next-ui-textline-background-color);
+    --next-ui-textline-errored-border-color: var(--palette-color-error);
+    --next-ui-textline-errored-shadow: var(--next-ui-textline-shadow);
+    --next-ui-textline-errored-placeholder-color: var(--palette-color-text-placeholder);
+    --next-ui-textline-errored-control-color: var(--next-ui-textline-color);
+
+}
+
+/* core */
+.container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: var(--next-ui-textline-width);
+    height: var(--next-ui-textline-height);
+    padding: 0 var(--next-ui-textline-gap);
+    color: var(--next-ui-textline-color);
+    font-weight: var(--next-ui-textline-font-weight);
+    font-size: var(--next-ui-textline-font-size);
+    background: var(--next-ui-textline-background-color);
+    border-width: var(--next-ui-textline-border-width);
+    border-color: var(--next-ui-textline-border-color);
+    border-style: solid;
+    border-radius: var(--next-ui-textline-border-radius);
+    box-shadow: var(--next-ui-textline-shadow);
+    transition: color 0.5s ease, background 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.value {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.input::-webkit-input-placeholder {
+    color: var(--next-ui-textline-placeholder-color);
+    font-weight: var(--next-ui-textline-placeholder-font-weight);
+}
+.input::-moz-placeholder {
+    color: var(--next-ui-textline-placeholder-color);
+    font-weight: var(--next-ui-textline-placeholder-font-weight);
+}
+.input:-ms-input-placeholder {
+    color: var(--next-ui-textline-placeholder-color);
+    font-weight: var(--next-ui-textline-placeholder-font-weight);
+}
+.input:-moz-placeholder {
+    color: var(--next-ui-textline-placeholder-color);
+    font-weight: var(--next-ui-textline-placeholder-font-weight);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    background: transparent;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset!important;
+    background: #fff!important;
+    background-clip: content-box!important;
+}
+
+.input:-webkit-autofill {
+    animation-name: onAutoFillStart;
+}
+.input:not(:-webkit-autofill) {
+    animation-name: onAutoFillCancel;
+}
+
+.container.focused.hasPlaceholder .input, 
+.container.filled.hasPlaceholder .input {
+    padding-top: 10px;
+}
+
+.placeholder {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    color: var(--next-ui-textline-placeholder-color);
+    font-weight: var(--next-ui-textline-placeholder-font-weight);
+    transform-origin: 0 0;
+    transform: translate(0, -50%);
+    transition: transform 0.1s linear, color 0.5s ease;
+}
+.container.focused.hasPlaceholder .placeholder, 
+.container.filled.hasPlaceholder .placeholder {
+    transform: translate(0, -85%) scale(0.7, 0.7);
+}
+
+.container.hasControl {
+    padding-right: 0;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 100%;
+    margin: 0 var(--next-ui-textline-control-gap);
+    padding: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    color: var(--next-ui-textline-control-color);
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-animation: appear 0.5s ease;
+    animation: appear 0.5s ease;
+}
+
+.clear {
+    display: none;
+}
+
+.container:hover .clear {
+    display: flex;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.clear svg {
+    width: var(--next-ui-textline-clear-size);
+    height: var(--next-ui-textline-clear-size);
+    vertical-align: top;
+}
+
+.unravel svg {
+    width: var(--next-ui-textline-unravel-size);
+    height: var(--next-ui-textline-unravel-size);
+    vertical-align: top;
+}
+
+.container.errored {
+    color: var(--next-ui-textline-errored-color);
+    background: var(--next-ui-textline-errored-background-color);
+    border-color: var(--next-ui-textline-errored-border-color);
+    box-shadow: var(--next-ui-textline-errored-shadow);
+}
+.container.errored .placeholder {
+    color: var(--next-ui-textline-errored-placeholder-color);
+}
+.container.errored .control {
+    color: var(--next-ui-textline-errored-control-color);
+}
+
+.container:not(.errored):hover {
+    background: var(--next-ui-textline-hovered-background-color);
+    border-color: var(--next-ui-textline-hovered-border-color);
+    box-shadow: var(--next-ui-textline-hovered-shadow);
+}
+
+.container:not(.errored).focused,
+.container.errored.focused {
+    color: var(--next-ui-textline-focused-color);
+    background: var(--next-ui-textline-focused-background-color);
+    border-color: var(--next-ui-textline-focused-border-color);
+    box-shadow: var(--next-ui-textline-focused-shadow);
+}
+.container.focused .placeholder {
+    color: var(--next-ui-textline-focused-placeholder-color);
+}
+.container.focused .control {
+    color: var(--next-ui-textline-focused-control-color);
+}
+
+.container.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.container.disabled .input {
+    cursor: not-allowed;
+}
+
+/* animations */
+@keyframes onAutoFillStart { from {} to {}}
+@keyframes onAutoFillCancel { from {} to {}}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

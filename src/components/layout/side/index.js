@@ -44,12 +44,12 @@ export default class Side extends React.Component {
         const options = [
             {
                 type: 'link',
-                url: '/textline',
+                url: '/components/textline',
                 title: 'Textline',
             },
             {
                 type: 'link',
-                url: '/textarea',
+                url: '/components/textarea',
                 title: 'Textarea',
             },
         ];

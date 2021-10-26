@@ -1,0 +1,114 @@
+{
+    "hljs": {
+      "display": "block",
+      "overflowX": "auto",
+      "padding": "0.5em",
+      "color": "#abb2bf",
+      "background": "#282c34"
+    },
+    "hljs-comment": {
+      "color": "#5c6370",
+      "fontStyle": "italic"
+    },
+    "hljs-quote": {
+      "color": "#5c6370",
+      "fontStyle": "italic"
+    },
+    "hljs-doctag": {
+      "color": "#c678dd"
+    },
+    "hljs-keyword": {
+      "color": "#c678dd"
+    },
+    "hljs-formula": {
+      "color": "#c678dd"
+    },
+    "hljs-section": {
+      "color": "#e06c75"
+    },
+    "hljs-name": {
+      "color": "#e06c75"
+    },
+    "hljs-selector-tag": {
+      "color": "#e06c75"
+    },
+    "hljs-deletion": {
+      "color": "#e06c75"
+    },
+    "hljs-subst": {
+      "color": "#e06c75"
+    },
+    "hljs-literal": {
+      "color": "#abb2bf"
+    },
+    "hljs-string": {
+      "color": "#c9843c"
+    },
+    "hljs-regexp": {
+      "color": "#c9843c"
+    },
+    "hljs-addition": {
+      "color": "#c9843c"
+    },
+    "hljs-attribute": {
+      "color": "#c9843c"
+    },
+    "hljs-meta-string": {
+      "color": "#c9843c"
+    },
+    "hljs-built_in": {
+      "color": "#e6c07b"
+    },
+    "hljs-class .hljs-title": {
+      "color": "#e6c07b"
+    },
+    "hljs-attr": {
+      "color": "#e4366a"
+    },
+    "hljs-variable": {
+      "color": "#e4366a"
+    },
+    "hljs-template-variable": {
+      "color": "#e4366a"
+    },
+    "hljs-type": {
+      "color": "#e4366a"
+    },
+    "hljs-selector-class": {
+      "color": "#e4366a"
+    },
+    "hljs-selector-attr": {
+      "color": "#e4366a"
+    },
+    "hljs-selector-pseudo": {
+      "color": "#e4366a"
+    },
+    "hljs-number": {
+      "color": "#e4366a"
+    },
+    "hljs-symbol": {
+      "color": "#61aeee"
+    },
+    "hljs-bullet": {
+      "color": "#61aeee"
+    },
+    "hljs-link": {
+      "color": "#61aeee",
+      "textDecoration": "underline"
+    },
+    "hljs-meta": {
+      "color": "#61aeee"
+    },
+    "hljs-selector-id": {
+      "color": "#61aeee"
+    },
+    "hljs-title": {
+      "color": "#61aeee"
+    },
+    "hljs-emphasis": {
+      "fontStyle": "italic"
+    },
+    "hljs-strong": {
+      "fontWeight": "bold"
+    }
+}

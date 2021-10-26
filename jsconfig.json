@@ -3,6 +3,7 @@
         "baseUrl": ".",
         "paths": {
             "kit/*": ["./kit/*"],
+            "assist/*": ["./src/assist/*"],
             "components/*": ["./src/components/*"],
             "app/*": ["./src/components/app/*"],
             "layout/*": ["./src/components/layout/*"],

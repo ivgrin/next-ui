@@ -1,0 +1,116 @@
+.container {
+    position: relative;
+}
+
+.name {
+    padding: 0;
+}
+
+.desc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.lSize:not(:first-child) {
+    margin-top: 96px;
+}
+.lSize .name {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.mSize:not(:first-child) {
+    margin-top: 96px;
+}
+.mSize .name {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+}
+
+.sSize:not(:first-child) {
+    margin-top: 32px;
+}
+.sSize .name {
+    margin: 8px 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #3a5765;
+}
+
+.xsSize:not(:first-child) {
+    margin-top: 32px;
+}
+.xsSize .name {
+    margin: 8px 0 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a5765;
+}
+
+.quotePreset {
+    /* padding: 32px;
+    border-left: 8px solid #2c3438;
+    background: #fff;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1); */
+}
+
+.panelPreset {
+    /* padding: 24px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1); */
+}
+.panelPreset .desc {
+    /* top: 32px;
+    right: 40px; */
+}
+
+.innerPanelPreset .desc {
+    top: 32px;
+    right: 40px;
+}
+.innerPanelPreset .content {
+    padding: 24px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+.strongPreset {
+    font-size: 16px;
+}
+
+.codePreset pre {
+    margin: 0!important;
+    padding: 32px 40px!important;
+    border: none;
+    border-radius: 0!important;
+    background: #2c3438!important;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    line-height: 24px!important;
+}
+
+.componentCodePreset pre {
+    margin: 0!important;
+    padding: 32px 40px!important;
+    border: none;
+    border-radius: 0!important;
+    background: #2c3438!important;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    line-height: 24px!important;
+}
+.componentCodePreset code {
+    color: #fff;
+}
+.componentCodePreset code span {
+    color: #abb2bf;
+}
+.componentCodePreset code span:first-child {
+    color: #fff;
+}

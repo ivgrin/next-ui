@@ -1,0 +1,189 @@
+.container {
+    empty-cells: show;
+    border-spacing: 0;
+}
+
+.thead .th {
+    padding: 14px 0 14px 20px;
+    border-bottom: 2px solid #bbb;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+.thead .th:first-child {
+    padding-left: 0;
+}
+
+.tbody .td {
+    padding: 14px 0 14px 20px;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+.tbody .td:first-child {
+    padding-left: 0;
+}
+.tbody .tr:not(:last-child) .td {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.xxxsSize {
+    width: 50px;
+}
+.xxsSize {
+    width: 100px;
+}
+.xsSize {
+    width: 150px;
+}
+.sSize {
+    width: 200px;
+}
+.mSize {
+    width: 250px;
+}
+.lSize {
+    width: 300px;
+}
+.xlSize {
+    width: 350px;
+}
+.xxlSize {
+    width: 400px;
+}
+.xxxlSize {
+    width: 450px;
+}
+.maxSize {
+    width: 100%;
+}
+
+.themesPreset {
+    width: 100%;
+}
+.themesPreset .thead .th:first-letter {
+    text-transform: uppercase;
+}
+.themesPreset .tbody .td:nth-child(1) {
+    color: #04a079;
+    width: 180px;
+}
+.themesPreset pre {
+    margin: 0;
+}
+
+.optionsPreset {
+    width: 100%;
+}
+.optionsPreset .thead .th:first-letter {
+    text-transform: uppercase;
+}
+.optionsPreset .tbody .td:nth-child(1) {
+    color: #e4366a;
+    width: 180px;
+}
+.optionsPreset .tbody .td:nth-child(2) {
+    color: #c9843c;
+    width: 60px;
+}
+.optionsPreset .tbody .td:nth-child(3) {
+    font-style: italic;
+    color: #999;
+    letter-spacing: 0.5px;
+    width: 200px;
+}
+
+.handlersPreset {
+    width: 100%;
+}
+.handlersPreset .thead .th:first-letter {
+    text-transform: uppercase;
+}
+.handlersPreset .tbody .td:nth-child(1) {
+    color: #266d90;
+    width: 180px;
+}
+.handlersPreset .tbody .td:nth-child(2) {
+    font-style: italic;
+    color: #999;
+    letter-spacing: 0.5px;
+    width: 280px;
+}
+
+.classesPreset {
+    width: 100%;
+}
+.classesPreset .thead .th:first-letter {
+    text-transform: uppercase;
+}
+.classesPreset .tbody .td:nth-child(1) {
+    color: #772e40;
+    width: 180px;
+}
+.classesPreset .tbody .td:nth-child(2) {
+    width: 280px;
+    color: #ac828c;
+    letter-spacing: 0.5px;
+}
+
+.configPreset {
+    width: 100%;
+}
+.configPreset .thead .th:first-letter {
+    text-transform: uppercase;
+}
+.configPreset .tbody .td:nth-child(1) {
+    color: #60837e;
+    width: 50%;
+}
+.configPreset .tbody .td:nth-child(2) {
+    width: 50%;
+    font-style: italic;
+    color: #666;
+}
+
+.examplePreset .thead {
+    display: none;
+}
+.examplePreset .tbody .td:first-child {
+    width: 180px;
+    font-weight: 400;
+    font-style: italic;
+    color: #999;
+    letter-spacing: 0.5px;
+}
+.examplePreset .tbody .td:nth-child(2):not(:last-child) {
+    width: 400px;
+}
+.examplePreset .tbody .tr:not(:last-child) .td {
+    border-bottom: none;
+}
+
+.values {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.values li {
+    display: inline-block;
+}
+.values li:not(:first-child) {
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 1px solid #ddd;
+}
+.values li.default {
+    font-weight: 600;
+    color: #666;
+}
+
+.modifiers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.modifiers li {
+    
+}

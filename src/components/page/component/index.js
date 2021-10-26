@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from 'layout/index';
-import PageTextline from './textline';
+import DocTextline from './textline';
 import styles from './index.module.css';
 
 export default class Home extends React.Component {
@@ -16,15 +16,15 @@ export default class Home extends React.Component {
     renderContent = () => {
         return (
             <div className={styles.container}>
-                {this.renderPage()}
+                {this.renderDoc()}
             </div>
         );
     };
 
-    renderPage = () => {
-        switch (this.props.page) {
+    renderDoc = () => {
+        switch (this.props.componentName) {
             case 'textline':
-                return <PageTextline />;
+                return <DocTextline />;
         }
     };
 

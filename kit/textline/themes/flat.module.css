@@ -1,0 +1,17 @@
+.container {
+    --next-ui-textline-background-color: #eee;
+    --next-ui-textline-border-width: 1px;
+    --next-ui-textline-border-color: #eee;
+
+    --next-ui-textline-hovered-background-color: #f3f3f3;
+    --next-ui-textline-hovered-border-color: var(--next-ui-textline-border-color);
+
+    --next-ui-textline-focused-background-color: #f3f3f3;
+    --next-ui-textline-focused-border-color: var(--next-ui-textline-border-color);
+    --next-ui-textline-focused-shadow: none;
+
+    --next-ui-textline-errored-color: #fff;
+    --next-ui-textline-errored-background-color: var(--palette-color-error);
+    --next-ui-textline-errored-placeholder-color: rgba(255, 255, 255, 0.7);
+    --next-ui-textline-errored-control-color: #fff;
+}
