@@ -1,10 +1,28 @@
 :root {
+
+    --palette-width-form: 100%;
+    --palette-height-form: 40px;
+
+    --palette-gap-form: 12px;
+    --palette-gap-form-control: 10px;
+    
+    --palette-radius-form: 4px;
+
     --palette-color-primary: #3c90f4;
     --palette-color-primary-rgb: 60, 144, 244;
     --palette-color-error: #d3220b;
     --palette-color-error-rgb: 211, 34, 11;
-    --palette-color-text: #3B414A;
+    --palette-color-white: #fff;
+    --palette-color-white-rgb: 255, 255, 255;
+
+    --palette-color-text: #3b414a;
     --palette-color-text-placeholder: #aaa;
+    --palette-color-form-background: #fff;
+    --palette-color-form-flat-background: #eee;
+    --palette-color-form-flat-background-hovered: #f3f3f3;
+    --palette-color-form-border: #c6c6c6;
+    --palette-color-form-border-hovered: #aaa;
 
     --palette-font-size-text: 14px;
+
 }

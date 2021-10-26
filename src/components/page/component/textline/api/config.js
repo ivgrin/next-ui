@@ -9,15 +9,15 @@ export default class ApiConfig extends React.Component {
                 rows={[
                     [
                         '--next-ui-textline-gap',
-                        '12px',
+                        'var(--palette-gap-form)',
                     ],
                     [
                         '--next-ui-textline-width',
-                        '100%',
+                        'var(--palette-width-form)',
                     ],
                     [
                         '--next-ui-textline-height',
-                        '40px',
+                        'var(--palette-height-form)',
                     ],
                     ['',''],
                     [
@@ -34,7 +34,7 @@ export default class ApiConfig extends React.Component {
                     ],
                     [
                         '--next-ui-textline-background-color',
-                        '#fff',
+                        'var(--palette-color-form-background)',
                     ],
                     [
                         '--next-ui-textline-border-width',
@@ -42,11 +42,11 @@ export default class ApiConfig extends React.Component {
                     ],
                     [
                         '--next-ui-textline-border-color',
-                        '#C6C6C6',
+                        'var(--palette-color-form-border)',
                     ],
                     [
                         '--next-ui-textline-border-radius',
-                        '4px',
+                        'var(--palette-radius-form)',
                     ],
                     ['',''],
                     [
@@ -60,7 +60,7 @@ export default class ApiConfig extends React.Component {
                     ['',''],
                     [
                         '--next-ui-textline-control-gap',
-                        '10px',
+                        'var(--palette-gap-form-control)',
                     ],
                     [
                         '--next-ui-textline-control-color',
@@ -81,7 +81,7 @@ export default class ApiConfig extends React.Component {
                     ],
                     [
                         '--next-ui-textline-hovered-border-color',
-                        '#aaa',
+                        'var(--palette-color-form-border-hovered)',
                     ],
                     [
                         '--next-ui-textline-hovered-shadow',

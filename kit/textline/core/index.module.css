@@ -1,29 +1,29 @@
 /* config */
 .container {
 
-    --next-ui-textline-gap: 12px;
-    --next-ui-textline-width: 100%;
-    --next-ui-textline-height: 40px;
+    --next-ui-textline-gap: var(--palette-gap-form);
+    --next-ui-textline-width: var(--palette-width-form);
+    --next-ui-textline-height: var(--palette-height-form);
 
     --next-ui-textline-color: var(--palette-color-text);
     --next-ui-textline-font-weight: 600;
     --next-ui-textline-font-size: var(--palette-font-size-text);
-    --next-ui-textline-background-color: #fff;
+    --next-ui-textline-background-color: var(--palette-color-form-background);
     --next-ui-textline-border-width: 1px;
-    --next-ui-textline-border-color: #C6C6C6;
-    --next-ui-textline-border-radius: 4px;
+    --next-ui-textline-border-color: var(--palette-color-form-border);
+    --next-ui-textline-border-radius: var(--palette-radius-form);
     --next-ui-textline-shadow: none;
 
     --next-ui-textline-placeholder-color: var(--palette-color-text-placeholder);
     --next-ui-textline-placeholder-font-weight: 500;
 
-    --next-ui-textline-control-gap: 10px;
+    --next-ui-textline-control-gap: var(--palette-gap-form-control);
     --next-ui-textline-control-color: var(--next-ui-textline-color);
     --next-ui-textline-clear-size: 10px;
     --next-ui-textline-unravel-size: 16px;
 
     --next-ui-textline-hovered-background-color: var(--next-ui-textline-background-color);
-    --next-ui-textline-hovered-border-color: #aaa;
+    --next-ui-textline-hovered-border-color: var(--palette-color-form-border-hovered);
     --next-ui-textline-hovered-shadow: var(--next-ui-textline-shadow);
 
     --next-ui-textline-focused-color: var(--next-ui-textline-color);
